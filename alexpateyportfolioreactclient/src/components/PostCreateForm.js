@@ -53,12 +53,12 @@ export default function PostCreateForm(props) {
 
                 <div className='mt-5'>
                     <label className='h3 form-label'>Post title</label>
-                    <input value={formData.title} name="title" type="text" className="form-control" onClick={handleChange}/>
+                    <input value={formData.title} name="title" type="text" className="form-control" onChange={handleChange}/>
                 </div>
 
                 <div className='mt-4'>
                     <label className='h3 form-label'>Post content</label>
-                    <input value={formData.content} name="content" type="text" className="form-control" onClick={handleChange}/>
+                    <input value={formData.content} name="content" type="text" className="form-control" onChange={handleChange}/>
                 </div>
 
                 <button className='btn btn-success btn-lg w-100 mt-5' onClick={handleSubmit}>Commit</button>
