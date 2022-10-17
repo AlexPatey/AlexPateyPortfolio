@@ -95,7 +95,7 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                   >
-                  <img src='../images/OCRProjectThumbnail.png' alt='OCR Project Thumbnail' />
+                  <img className='projectImage' src='../images/OCRProjectThumbnail.png' alt='OCR Project Thumbnail' />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectTitle">
                     {"<!--OCR 'Optical Character Recognition' Project-->"}
@@ -117,7 +117,7 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                 >
-                  <img src='../images/ALP3.png' alt='Convex Hull Project' />
+                  <img className='projectImage' src='../images/ALP3.png' alt='Convex Hull Project' />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
                     {"<!--Convex Hull Simulator Project-->"}
@@ -138,7 +138,7 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                 >
-                  <img src='../images/LOS3.png' alt='Line of Sight Project' />
+                  <img className='projectImage' src='../images/LOS3.png' alt='Line of Sight Project' />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
                     {"<!--Line of Sight Project-->"}

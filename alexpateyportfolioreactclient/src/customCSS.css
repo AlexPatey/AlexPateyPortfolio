@@ -39,6 +39,10 @@
     margin-bottom: 30px;
 }
 
+.projectImage {
+    height: auto;
+}
+
 @media (max-width: 768px) {
 
     .introContainer {
