@@ -95,7 +95,9 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                   >
-                  <img className='projectImage' src='../images/OCRProjectThumbnail.png' alt='OCR Project Thumbnail' />
+                    <div>
+                      <img className='projectImage' src='../images/OCRProjectThumbnail.png' alt='OCR Project Thumbnail' />
+                    </div>
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectTitle">
                     {"<!--OCR 'Optical Character Recognition' Project-->"}
@@ -117,7 +119,9 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                 >
-                  <img className='projectImage' src='../images/ALP3.png' alt='Convex Hull Project' />
+                  <div>
+                    <img className='projectImage' src='../images/ALP3.png' alt='Convex Hull Project' />
+                  </div>
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
                     {"<!--Convex Hull Simulator Project-->"}
@@ -138,7 +142,9 @@ export default function Portfolio() {
               <Card
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                 >
-                  <img className='projectImage' src='../images/LOS3.png' alt='Line of Sight Project' />
+                  <div>
+                    <img className='projectImage' src='../images/LOS3.png' alt='Line of Sight Project' />
+                  </div>
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
                     {"<!--Line of Sight Project-->"}
