@@ -31,8 +31,6 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 const theme = createTheme();
 
 export default function Portfolio() {
@@ -62,23 +60,23 @@ export default function Portfolio() {
             bgcolor: '#232e31',
             pt: 8,
             pb: 6,
-            minHeight: "calc(100vh - 258px)"
           }}
+          className='introContainer'
         >
           <Container maxWidth="sm">
             <Typography
-              component="h1"
-              variant="h2"
+              variant='h2'
               align="center"
               color="#808d8e"
               fontFamily={'Poppins'}
               fontWeight={400}
               gutterBottom
+              className='nameText'
             >
               Alex Patey
             </Typography>
-            <Typography variant="h5" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph>
-            {"<!--Hi, I am a passionate full-stack developer who loves to learn new technologies and stacks. Below are some of my personal projects.-->"}
+            <Typography variant="h5" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph className='descText'>
+            {"<!--👋 Hi, I am a passionate full-stack developer who loves to learn new technologies and stacks. Below are some of my personal projects.-->"}
             </Typography>
             {/* <Stack
               sx={{ pt: 4 }}
@@ -91,45 +89,82 @@ export default function Portfolio() {
             </Stack> */}
           </Container>
         </Box>
-        {/*<Container sx={{ py: 8, bgcolor: '#232e31' }} maxWidth="100%">
-           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://source.unsplash.com/random"
-                    alt="random"
-                  />
+        <Container sx={{ py: 8, bgcolor: '#232e31' }} maxWidth="100%" className='projectContainer'>
+          <div className='row'>
+            <div className='col-lg-4 col-md-6 col-sm-12 cardCol'>
+              <Card
+                  sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
+                  >
+                  <img src='../images/OCRProjectThumbnail.png' alt='OCR Project Thumbnail' />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                    <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectTitle">
+                    {"<!--OCR 'Optical Character Recognition' Project-->"}
                     </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      This project allows a user to extract text (both-handwritten and digital) from uploaded images and then save the text to a .txt file.
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      Uses Google Cloud API, C#, HTML5, CSS3, JavaScript, ASP.NET Core, SQL.
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://www.youtube.com/watch?v=Tfn7-S6s54I&t=16s&ab_channel=AlexP")}>View Video Demo</button>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/alexpweb-repo")}>View Code</button>
                   </CardActions>
                 </Card>
-              </Grid>
-            ))}
-          </Grid> 
-        </Container>*/}
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12 cardCol'>
+              <Card
+                  sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
+                >
+                  <img src='../images/ALP3.png' alt='Convex Hull Project' />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
+                    {"<!--Convex Hull Simulator Project-->"}
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      This project simulates the convex hull algorithm (finds the smallest convex polygon for a given set of points). Educational tool for computational geometry.
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      Uses VB.Net, Windows Forms.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/ConvexHullSimulator")}>View Code</button>
+                  </CardActions>
+                </Card>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12 cardCol'>
+              <Card
+                  sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
+                >
+                  <img src='../images/LOS3.png' alt='Line of Sight Project' />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
+                    {"<!--Line of Sight Project-->"}
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc"> 
+                      This project was built in C++ using a game engine called 'Pixel Game Engine,' the aim of this project is to simulate shadow casting.
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      Uses C++.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/Shadow-Casting")}>View Code</button>
+                  </CardActions>
+                </Card>
+            </div>
+          </div>
+            <Typography variant="h6" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph>
+              {"<!--More projects and project hosting coming soon. 🔨-->"}
+            </Typography>
+        </Container>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: '#232e31', p: 6,}} component="footer">
+      <Box sx={{ bgcolor: '#232e31', p: 6,}} component="footer" className='footerContainer'>
         <Typography variant="h6" color="#808d8e"  align="center" fontFamily={'Poppins'} gutterBottom>
-            External Links and Contact Info
+          {"<!--External Links and Contact Info-->"}
         </Typography>
         <div className='externalLinks'>
             <div>

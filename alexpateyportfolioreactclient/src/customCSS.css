@@ -1,4 +1,3 @@
-
 .headerPadding {
    padding: 0 5px;
 }
@@ -14,3 +13,63 @@
 .contactInfo {
     margin-top: 10px;
 }
+
+.buttonLinks {
+    color: #9ba5a6;
+    font-family: 'Poppins';
+    background-color: #232e31;
+    margin: 0 10px 10px 10px;
+}
+
+.buttonLinks:hover {
+    color: #9ba5a6;
+    font-family: 'Poppins';
+    background-color: #314145;
+    margin: 0 10px 10px 10px;
+}
+
+.buttonLinks:active:hover {
+    color: #9ba5a6;
+    font-family: 'Poppins';
+    background-color: #314145;
+    margin: 0 10px 10px 10px;
+}
+
+.cardCol {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .introContainer {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .projectContainer {
+        padding-top: 0 !important;
+    }
+
+    .nameText {
+        font-size: 32pt !important;
+    }
+
+    .descText {
+        font-size: 13pt !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .projectTitle {
+        font-size: 16pt !important;
+    }
+
+    .projectDesc {
+        font-size: 13pt !important;
+    }
+
+    .footerContainer {
+        padding-top: 0 !important;
+    }
+}
+
