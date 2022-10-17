@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Constants from "./utilities/Constants";
 import PostCreateForm from "./components/PostCreateForm";
 import PostUpdateForm from "./components/PostUpdateForm";
+import { Navbar } from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
 
 export default function App() {
   const [posts, setPosts] = useState([]);
@@ -26,26 +28,29 @@ export default function App() {
   }
 
   return (
-    <div className="container">
-      <div className="row min-vh-100">
-        <div className="col d-flex flex-column justify-content-center align-items-center">
-          {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
-            <div>
-              <h1 className="text-center">Alex Patey Portfolio</h1>
-              <div className="mt-5">
-                <button onClick={getPosts} className="btn btn-primary btn-lg w-100">Get Posts from server</button>
-                <button onClick={() => setShowingCreateNewPostForm(true)} className="btn btn-secondary btn-lg w-100 mt-4">Create New Post</button>
+    <div>
+      <Portfolio/>
+      {/* <div className="container">
+        <div className="row min-vh-100">
+          <div className="col d-flex flex-column justify-content-center align-items-center">
+            {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
+              <div>
+                <h1 className="text-center">Alex Patey Portfolio</h1>
+                <div className="mt-5">
+                  <button onClick={getPosts} className="btn btn-primary btn-lg w-100">Get Posts from server</button>
+                  <button onClick={() => setShowingCreateNewPostForm(true)} className="btn btn-secondary btn-lg w-100 mt-4">Create New Post</button>
+                </div>
               </div>
-            </div>
-          )}
-          
-          {(posts.length > 0 && showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && renderPostsTable()}
+            )}
+            
+            {(posts.length > 0 && showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && renderPostsTable()}
 
-          {showingCreateNewPostForm && <PostCreateForm onPostCreated={onPostCreated}></PostCreateForm>}
-        
-          {postCurrentlyBeingUpdated !== null && <PostUpdateForm post={postCurrentlyBeingUpdated} onPostUpdated={onPostUpdated}></PostUpdateForm>}
+            {showingCreateNewPostForm && <PostCreateForm onPostCreated={onPostCreated}></PostCreateForm>}
+          
+            {postCurrentlyBeingUpdated !== null && <PostUpdateForm post={postCurrentlyBeingUpdated} onPostUpdated={onPostUpdated}></PostUpdateForm>}
+          </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 
