@@ -201,7 +201,7 @@ export default function Portfolio() {
             </div>
             <div className='contactInfo'>
                 <Typography variant="h7" color="#808d8e" fontFamily={'Poppins'} fontWeight={500} className='headerPadding email'>
-                    alex.patey@btinternet.com • 07941 060016 • <a href={"../Alex Patey Resume.pdf"} target="_blank" rel="noreferrer">{"Download Resume"}</a>
+                    alex.patey@btinternet.com • 07941 060016 • <a href={"../Alex Patey Resume.pdf"} target="_blank" rel="noreferrer">{"View Resume"}</a>
                 </Typography>
             </div>
         </div>
