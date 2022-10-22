@@ -116,7 +116,7 @@ export default function Portfolio() {
                   sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
                   >
                     <div>
-                      <img className='projectImage' src='../images/TicTacToe.png' alt='OCR Project Thumbnail' />
+                      <img className='projectImage' src='../images/TicTacToe.png' alt='Tic Tac Toe Project Thumbnail' />
                     </div>
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectTitle">
