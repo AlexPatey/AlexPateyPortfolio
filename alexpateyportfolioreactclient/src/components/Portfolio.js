@@ -1,14 +1,9 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -42,14 +37,15 @@ export default function Portfolio() {
             width: "100%",
             justifyContent: "space-between"
           }}>
-          <Typography variant="h6" color="#9ba5a6" fontFamily={'Poppins'} fontWeight={500} noWrap>
+          <Typography variant="h6" color="#9ba5a6" fontFamily={'Poppins'} fontWeight={500} noWrap className="navbarTitle">
             {"<!--Alex Patey Portfolio-->"}
           </Typography>
-          <div>
+          <div className="navbarLinksContainer">
             <GitHub className='headerMargin' onClick={() => window.open("https://github.com/AlexPatey")}
                 sx={{ cursor: 'pointer', color: "#9ba5a6" }}/>
             <LinkedIn className='headerMargin' onClick={() => window.open("https://www.linkedin.com/in/alex-patey-b98a7519a/")}
                 sx={{ cursor: 'pointer', color: "#9ba5a6" }}/>
+            <a className='cvLink' href={"../Alex Patey Resume.pdf"} target="_blank" rel="noreferrer">{"Resume"}</a>
           </div>
         </Toolbar>
       </AppBar>
@@ -76,7 +72,7 @@ export default function Portfolio() {
               Alex Patey
             </Typography>
             <Typography variant="h5" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph className='descText'>
-            {"<!--👋 Hi, I am a passionate full-stack developer who loves to learn new technologies and stacks. Below are some of my personal projects.-->"}
+              {"<!--👋 Hi, I am a passionate full-stack developer who loves to learn new technologies and stacks. Below are some of my personal projects.-->"}
             </Typography>
             {/* <Stack
               sx={{ pt: 4 }}
@@ -112,6 +108,30 @@ export default function Portfolio() {
                   <CardActions>
                     <button size="small" className='btn buttonLinks' onClick={() => window.open("https://www.youtube.com/watch?v=Tfn7-S6s54I&t=16s&ab_channel=AlexP")}>View Video Demo</button>
                     <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/alexpweb-repo")}>View Code</button>
+                  </CardActions>
+                </Card>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12 cardCol'>
+              <Card
+                  sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
+                  >
+                    <div>
+                      <img className='projectImage' src='../images/TicTacToe.png' alt='OCR Project Thumbnail' />
+                    </div>
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectTitle">
+                    {"<!--Tic Tac Toe React Project-->"}
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      Tic Tac Toe game built entirely in React. Includes move history allowing users to return to previous game states. Built following React's tic tac toe tutorial.
+                    </Typography>
+                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
+                      Uses React, JavaScript, HTML5, CSS3, Bootstrap
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://aspnetcorereacttictactoe.azurewebsites.net/")}>View Live Demo</button>
+                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/ASPNetCoreReact")}>View Code</button>
                   </CardActions>
                 </Card>
             </div>
@@ -162,9 +182,9 @@ export default function Portfolio() {
                 </Card>
             </div>
           </div>
-            <Typography variant="h6" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph>
-              {"<!--More projects and project hosting coming soon. 🔨-->"}
-            </Typography>
+            {/* <Typography variant="h6" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph>
+              {"<!--More projects and more project hosting coming soon. 🔨-->"}
+            </Typography> */}
         </Container>
       </main>
       {/* Footer */}
@@ -181,7 +201,7 @@ export default function Portfolio() {
             </div>
             <div className='contactInfo'>
                 <Typography variant="h7" color="#808d8e" fontFamily={'Poppins'} fontWeight={500} className='headerPadding email'>
-                    alex.patey@btinternet.com • 07941 060016
+                    alex.patey@btinternet.com • 07941 060016 • <a href={"../Alex Patey Resume.pdf"} target="_blank" rel="noreferrer">{"Download Resume"}</a>
                 </Typography>
             </div>
         </div>

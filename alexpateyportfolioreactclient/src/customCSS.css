@@ -43,7 +43,29 @@ body {
     margin-bottom: 30px;
 }
 
+a {
+    color: #9ba5a6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9ba5a6;
+    text-decoration: underline;
+}
+
+.cvLink {
+    font-size: 16pt;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.navbarLinksContainer {
+    display: flex;
+    align-items: center;
+}
+
 .projectImage {
+    border: 1px solid black;
     height: auto;
     width: 100%;
 }
@@ -82,3 +104,13 @@ body {
     }
 }
 
+/*style updates for very small phones (iPhone SE, etc.)*/
+@media (max-width: 470px) {
+    .navbarTitle {
+        font-size: 11pt !important;
+    }   
+    
+    .cvLink {
+        font-size: 11pt;
+    }
+}
