@@ -158,29 +158,6 @@ export default function Portfolio() {
                   </CardActions>
                 </Card>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-12 cardCol'>
-              <Card
-                  sx={{ bgcolor: "#405458", height: 'auto', display: 'flex', flexDirection: 'column', borderRadius: "0px" }}
-                >
-                  <div>
-                    <img className='projectImage' src='../images/LOS3.png' alt='Line of Sight Project' />
-                  </div>
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" fontWeight={"500"} fontFamily={'Poppins'} color={"#9ba5a6"}  className="projectTitle">
-                    {"<!--Line of Sight Project-->"}
-                    </Typography>
-                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc"> 
-                      This project was built in C++ using a game engine called 'Pixel Game Engine,' the aim of this project is to simulate shadow casting.
-                    </Typography>
-                    <Typography variant="h6" fontWeight={"300"} fontFamily={'Poppins'} color={"#9ba5a6"} className="projectDesc">
-                      Uses C++.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <button size="small" className='btn buttonLinks' onClick={() => window.open("https://github.com/AlexPatey/Shadow-Casting")}>View Code</button>
-                  </CardActions>
-                </Card>
-            </div>
           </div>
             {/* <Typography variant="h6" align="center" color="#808d8e" fontFamily={'Poppins'} paragraph>
               {"<!--More projects and more project hosting coming soon. 🔨-->"}
